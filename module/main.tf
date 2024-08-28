@@ -1,6 +1,6 @@
 module mypythonapp {
     source = "mkarimi20/release/helm"
-    version = "0.0.3"
+    version = "0.0.4"
     name = "python"
     namespace = "wordpress"
   values  = [<<EOF
