@@ -9,9 +9,3 @@ variable "chart" {
   default     = "../myapp"
   description = "location of my wordpress app chart"
 }
-
-variable "namespace" {
-  type        = string
-  description = "the namespace for app"
-  default     = "mywordpressapp"
-}
