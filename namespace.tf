@@ -1,13 +1,7 @@
-resource "kubernetes_namespace" "wordress" {
+resource "kubernetes_namespace" "wordpress" {
   metadata {
-    annotations = {
-      name = "wordress-annotation"
-    }
-
-    labels = {
-      mylabel = "myapp"
-    }
-
-    name = var.namespace
+    annotations = var.annotations
+    labels      = var.labels
+    name        = var.namespace
   }
 }

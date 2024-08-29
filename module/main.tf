@@ -1,8 +1,14 @@
 module mypythonapp {
     source = "mkarimi20/release/helm"
-    version = "0.0.4"
+    version = "0.0.7"
     name = "python"
     namespace = "wordpress"
+    annotations = {
+    name = "new-annotation"
+    }
+    labels = {
+      name = "new-labels"
+    }
   values  = [<<EOF
 replicaCount: 1
 

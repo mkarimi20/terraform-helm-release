@@ -15,3 +15,13 @@ variable values {
     default = []
     description = "values for my chart"
 }
+
+variable annotations {
+  type = map{any}
+  description = "map of annotation for namespace"
+}
+
+variable labels {
+  type = map{any}
+  description = "map of labels for namespace"
+}
