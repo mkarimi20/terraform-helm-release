@@ -17,11 +17,11 @@ variable values {
 }
 
 variable annotations {
-  type = map{any}
+  type = map(any)
   description = "map of annotation for namespace"
 }
 
 variable labels {
-  type = map{any}
+  type = map(any)
   description = "map of labels for namespace"
 }
